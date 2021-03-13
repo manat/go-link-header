@@ -1,4 +1,4 @@
-module github.com/manat/link-header
+module github.com/manat/go-link-header
 
 go 1.16
 
