@@ -37,9 +37,6 @@ func Serialize(links []Link) (string, error) {
 			return "", errors.New("URI cannot be blank")
 		}
 
-		if i == 0 {
-			b.WriteString("Link: ")
-		}
 		if i > 0 { // append comma using index as opposing to joins
 			b.WriteString(", ")
 		}

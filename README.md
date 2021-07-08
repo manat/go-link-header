@@ -12,7 +12,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/manat/link-header/link"
+	"github.com/manat/go-link-header/link"
 )
 
 func main() {
@@ -36,7 +36,7 @@ func main() {
 	}
 
 	fmt.Println(link.Serialize(links))
-	// Link: <https://api.example.com/scenarios?page=3>; rel="next", <https://api.example.com/scenarios?page=1>; rel="prev", <https://api.example.com/scenarios?page=50>; rel="last"; title="This is the last page"; total="5000"
+	//<https://api.example.com/scenarios?page=3>; rel="next", <https://api.example.com/scenarios?page=1>; rel="prev", <https://api.example.com/scenarios?page=50>; rel="last"; title="This is the last page"; total="5000"
 }
 ```
 

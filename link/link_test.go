@@ -24,7 +24,7 @@ func TestGenerating(t *testing.T) {
 					Rel: NextRel,
 				},
 			},
-			`Link: <https://api.example.com/scenarios?page=3>; rel="next"`,
+			`<https://api.example.com/scenarios?page=3>; rel="next"`,
 			nil,
 		},
 		{
@@ -43,7 +43,7 @@ func TestGenerating(t *testing.T) {
 					Rel: LastRel,
 				},
 			},
-			`Link: <https://api.example.com/scenarios?page=3>; rel="next", <https://api.example.com/scenarios?page=1>; rel="prev", <https://api.example.com/scenarios?page=50>; rel="last"`,
+			`<https://api.example.com/scenarios?page=3>; rel="next", <https://api.example.com/scenarios?page=1>; rel="prev", <https://api.example.com/scenarios?page=50>; rel="last"`,
 			nil,
 		},
 		{
@@ -68,7 +68,7 @@ func TestGenerating(t *testing.T) {
 					},
 				},
 			},
-			`Link: <https://api.example.com/scenarios?page=10>; rel="next"; title="Next scenarios are waiting"; total="1000", ` +
+			`<https://api.example.com/scenarios?page=10>; rel="next"; title="Next scenarios are waiting"; total="1000", ` +
 				`<https://api.example.com/scenarios?page=1>; rel="first"; hreflang="th-TH"; rev="canonical"; title="The begin of everything"; total="1000"`,
 			nil,
 		},
